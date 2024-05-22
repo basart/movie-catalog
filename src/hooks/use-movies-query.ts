@@ -51,8 +51,6 @@ function useMoviesQuery(searchPhrase: string) {
       controller.abort();
     };
   }, [debouncedSearchPhrase, currentPage]);
-
-  return { status };
 }
 
 export { useMoviesQuery };
