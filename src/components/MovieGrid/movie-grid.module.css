@@ -1,0 +1,18 @@
+.card-list {
+  --min-card-width: 250px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-card-width), 1fr));
+  align-items: self-start;
+  gap: 1rem;
+}
+
+.pagination-container {
+  padding-block: 2rem;
+}
+
+@media (min-width: 800px) {
+  .card-list {
+    gap: 3rem;
+  }
+}

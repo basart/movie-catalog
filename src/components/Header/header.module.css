@@ -1,0 +1,44 @@
+.header-container {
+  background-color: var(--clr-blue-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 1rem;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.profile-dropdown {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var("--clr-black");
+}
+
+.profile-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dropdown-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .profile-dropdown,
+  .header h1 {
+    display: none;
+  }
+}
