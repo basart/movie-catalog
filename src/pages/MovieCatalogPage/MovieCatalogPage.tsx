@@ -3,12 +3,15 @@ import { MovieGrid } from "@/components/MovieGrid";
 
 function CoursesPage() {
   return (
-    <main>
+    <>
       <Header />
-      <div className="container pt-8">
-        <MovieGrid />
-      </div>
-    </main>
+
+      <main>
+        <div className="container pt-8">
+          <MovieGrid />
+        </div>
+      </main>
+    </>
   );
 }
 
