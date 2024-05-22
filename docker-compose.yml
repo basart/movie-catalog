@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  frontend:
+    build: ./
+    working_dir: /opt/app
+    ports:
+      - "8080:8080"
+    environment:
+      VITE_BASE_URL: https://www.omdbapi.com
+      VITE_API_KEY: 8523cbb8
+    command: ["yarn", "dev"]
+    volumes:
+      - ./:/opt/app
+      - /opt/app/node_modules
